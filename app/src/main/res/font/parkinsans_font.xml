@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Regular -->
+    <font
+        app:fontStyle="normal"
+        app:fontWeight="400"
+        app:font="@font/parkinsans_regular" />
+
+    <!-- Bold -->
+    <font
+        app:fontStyle="normal"
+        app:fontWeight="700"
+        app:font="@font/parkinsans_bold" />
+
+    <!-- Extra Bold -->
+    <font
+        app:fontStyle="normal"
+        app:fontWeight="800"
+        app:font="@font/parkinsans_extra_bold" />
+
+    <!-- Light -->
+    <font
+        app:fontStyle="normal"
+        app:fontWeight="300"
+        app:font="@font/parkinsans_light" />
+
+    <!-- Medium -->
+    <font
+        app:fontStyle="normal"
+        app:fontWeight="500"
+        app:font="@font/parkinsans_medium" />
+
+    <!-- Semi Bold -->
+    <font
+        app:fontStyle="normal"
+        app:fontWeight="600"
+        app:font="@font/parkinsans_semi_bold" />
+</font-family>

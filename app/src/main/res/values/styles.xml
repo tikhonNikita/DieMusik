@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SmallAppFont">
+        <item name="android:fontFamily">@font/parkinsans_font</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <!-- Medium Text -->
+    <style name="MediumAppFont">
+        <item name="android:fontFamily">@font/parkinsans_font</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <!-- Large Text -->
+    <style name="LargeAppFont">
+        <item name="android:fontFamily">@font/parkinsans_font</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+
+
+    <style name="Theme.DasKino.TextEdit" parent="Widget.Material3.TextInputEditText.FilledBox">
+        <item name="android:textAppearance">@style/LargeAppFont</item>
+        <!-- Add other customizations for EditText if needed -->
+    </style>
+
+
+</resources>
