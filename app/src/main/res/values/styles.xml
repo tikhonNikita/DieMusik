@@ -19,9 +19,13 @@
 
 
 
-    <style name="Theme.DasKino.TextEdit" parent="Widget.Material3.TextInputEditText.FilledBox">
-        <item name="android:textAppearance">@style/LargeAppFont</item>
+    <style name="Theme.DasKino.TextEdit" parent="Widget.AppCompat.EditText">
+        <item name="android:textAppearance">@style/MediumAppFont</item>
         <!-- Add other customizations for EditText if needed -->
+    </style>
+
+    <style name="Theme.DasKino.TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textAppearance">@style/MediumAppFont</item>
     </style>
 
 

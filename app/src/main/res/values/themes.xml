@@ -10,5 +10,6 @@
         <item name="textAppearanceBodyMedium">@style/MediumAppFont</item>
         <item name="textAppearanceBodyLarge">@style/LargeAppFont</item>
         <item name="editTextStyle">@style/Theme.DasKino.TextEdit</item>
+        <item name="android:textViewStyle">@style/Theme.DasKino.TextView</item>
     </style>
 </resources>
