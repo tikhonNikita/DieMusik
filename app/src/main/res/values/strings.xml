@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">DieMusik</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_main_fragment">Hello Main fragment</string>
+    <string name="onboarding_enter_name">Enter your name</string>
+    <string name="onboarding_name">Name</string>
+    <string name="onboarding_go_to_main_fragment">Go to main fragment</string>
+    <string name="onboarding_placeholder_name">My name is</string>
 </resources>

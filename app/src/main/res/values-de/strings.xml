@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DieMusik</string>
+    <string name="hello_main_fragment">Hallo Hauptfragment</string>
+    <string name="onboarding_enter_name">Geben Sie Ihren Namen ein</string>
+    <string name="onboarding_name">Name</string>
+    <string name="onboarding_go_to_main_fragment">Zum Hauptfragment gehen</string>
+    <string name="onboarding_placeholder_name">Mein Name ist</string>
+</resources>

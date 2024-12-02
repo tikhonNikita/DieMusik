@@ -26,7 +26,7 @@ class OnboardingFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.nameInput.setText("Some text")
+        binding.nameInput.hint = getString(R.string.onboarding_placeholder_name)
         binding.onboardingToToMainFragmentButton.setOnClickListener {
             goToMainFragment()
         }
