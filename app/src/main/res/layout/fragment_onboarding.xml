@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp">
@@ -13,12 +14,21 @@
         app:layout_constraintGuide_percent="0.6" />
 
     <TextView
+        android:id="@+id/onboarding_given_name"
+        style="?attr/textAppearanceBodyMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="This is entered name" />
 
+    <TextView
         android:id="@+id/onboardingNameInput"
+        style="?attr/textAppearanceBodyMedium"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/onboarding_enter_name"
-        style="?attr/textAppearanceBodyMedium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/onboardingNameGuideline" />
@@ -29,20 +39,19 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="@string/onboarding_name"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/onboardingNameInput" />
 
     <Button
         android:id="@+id/onboardingToToMainFragmentButton"
-        android:layout_marginTop="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="@string/onboarding_go_to_main_fragment"
-        app:layout_constraintTop_toBottomOf="@id/nameInput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        />
-    >
+        app:layout_constraintTop_toBottomOf="@id/nameInput" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

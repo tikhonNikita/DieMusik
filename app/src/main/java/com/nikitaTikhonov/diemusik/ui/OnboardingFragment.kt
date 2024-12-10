@@ -5,13 +5,16 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.widget.doOnTextChanged
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.nikitaTikhonov.diemusik.DieMusikApplication
 import com.nikitaTikhonov.diemusik.R
 import com.nikitaTikhonov.diemusik.databinding.FragmentOnboardingBinding
 import com.nikitaTikhonov.diemusik.viewmodel.OnboardingViewModel
 import jakarta.inject.Inject
+import kotlinx.coroutines.launch
 
 class OnboardingFragment : Fragment() {
 
@@ -45,6 +48,16 @@ class OnboardingFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.nameInput.hint = getString(R.string.onboarding_placeholder_name)
+        binding.nameInput.doOnTextChanged { text, _, _, _ ->
+            onboardingViewModel.updateUserName(text.toString())
+        }
+
+        viewLifecycleOwner.lifecycleScope.launch {
+            onboardingViewModel.userName.collect { name ->
+                binding.onboardingGivenName.text = name
+            }
+        }
+
         binding.onboardingToToMainFragmentButton.setOnClickListener {
             goToMainFragment()
         }
